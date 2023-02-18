@@ -25,6 +25,10 @@ function Form(){
               }, (error) => {
                 console.log(error);
             });
+            setName("");
+            setEmail("");
+            setMessage("");
+            setSubject("");
         }
     }
 
@@ -37,10 +41,6 @@ function Form(){
             toast.success("Submitted Successfully!",{
                 position:"bottom-center"
             });
-            setName("");
-            setEmail("");
-            setMessage("");
-            setSubject("");
         }
     }
 
