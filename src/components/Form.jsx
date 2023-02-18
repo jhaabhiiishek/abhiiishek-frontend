@@ -14,7 +14,7 @@ function Form(){
     function handleSubmit(event){
         event.preventDefault()
         if(name!==""||email!==""||subject!==""||message!==""){
-            axios.post('/formSubmit', {
+            axios.post('https://fine-pants-elk.cyclic.app/formSubmit', {
                 name: name,
                 email:email,
                 subject:subject,
