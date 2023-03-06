@@ -14,17 +14,12 @@ function Form(){
     function handleSubmit(event){
         event.preventDefault()
         if(name!==""||email!==""||subject!==""||message!==""){
-            axios.post('https://fine-pants-elk.cyclic.app/formSubmit', {
+            axios.post('https://abhiiishek.vercel.app/formSubmit', {
                 name: name,
                 email:email,
                 subject:subject,
                 message:message
-              })
-              .then((response) => {
-                console.log(response);
-              }, (error) => {
-                console.log(error);
-            });
+              });
             setName("");
             setEmail("");
             setMessage("");
