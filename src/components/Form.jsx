@@ -14,7 +14,7 @@ function Form(){
     function handleSubmit(event){
         event.preventDefault()
         if(name!==""||email!==""||subject!==""||message!==""){
-            axios.post('https://abhiiishek.vercel.app/formSubmit', {
+            axios.post('https://abhiiishek-backend.vercel.app/formSubmit', {
                 name: name,
                 email:email,
                 subject:subject,
